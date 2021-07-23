@@ -3,8 +3,8 @@
 
 	<!-- fix no part modules texture -->
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName="ModuleEfficiency" or defName="ModuleArmorEBF"]</xpath>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@Name="MSE_ModuleBionic"]/graphicData</xpath>
 		<value>
 			<graphicData Inherit="False">
 				<texPath>BionicIcons/Boxes/BionicModule</texPath>
