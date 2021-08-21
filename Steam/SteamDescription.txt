@@ -32,6 +32,7 @@ Patched mods:[list]
 Known incompatibilities:[list]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=735106432]EdB Prepare Carefully[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1874644848]Character Editor[/url]: minor issues when adding limb hediffs
 [*]Archotech Expanded breaks some stuff on game load.
+[*]Bulk Stonecutting breaks crafting of complete protheses.
 [/list]
 If a mod not explicitly listed here adds limb prostheses, they will behave like vanilla (it will show a warning in the debug log after the game is loaded).
 If a mod adds races with limbs that have different parts from normal humans, human prostheses will not work properly on them; if they have the same kinds of parts but in different numbers (i.e. 3 fingers instead of 5), or if they have been patched, MSE2 will generate a new limb version.
@@ -47,7 +48,8 @@ The description of prosthetics contains an entry indicating how many module slot
 A segment is a piece of a prosthesis, for example a hand without fingers, or just the shoulder part of an arm. In the crafting menu you can find different recipes to craft both a segment or an entire limb; if you have race mods with slightly different limbs you will also find recipes for prostheses compatible with their body.
 [h3]I can't install a prosthesis?!?[/h3]
 Only limbs that are compatible with a pawn will be installable. You can check the entry labelled "Compatible versions" in a prosthesis's description to see what races it can be installed on, and you can use the "Add part" buttons to add the missing parts.
-
+[h3]Why so much clutter in the health tab?[/h3]
+In the mod settings you can find options to hide empty module slots, and options to always hide sub-parts or only when they are clean or only have modules.
 
 
 [h1]Adding to pre-existing saves[/h1]
@@ -62,6 +64,6 @@ If you wish to remove this mod from a save you should first set to allow all spe
 
 
 [h1]Other info[/h1]
-[url=https://github.com/AbraxasWorks/Medical-System-Expansion---Revived]GitHub repo[/url]
+[url=https://github.com/JonM0/MedicalSystemExpansion2]GitHub repo[/url]
 [url=https://discord.gg/uFatgua95u]Discord Server[/url]
 This mod was inspired by [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1749027802]Medical System Expansion by Oreno[/url] ([url=https://steamcommunity.com/sharedfiles/filedetails/?id=2006968859]1.1 port[/url]). They are quite different from MSE2, and at this point in development all MSE2 source code is original.
