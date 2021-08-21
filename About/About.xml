@@ -62,6 +62,7 @@ This is inspired by Medical System Expansion by Oreno.
 		<li>V1024.EliteArchotech</li>		<!-- already included -->
 		<li>craftedmutants.velcroboy333</li>		<!-- makes prostheses installable as extra limbs, which breaks balance -->
 		<li>teok25.archotechexpanded</li>		<!-- errors at game load -->
+		<li>Jexa.bulkstonecutting</li>		<!-- breaks crafting of complete limbs -->
 	</incompatibleWith>
 
 </ModMetaData>
