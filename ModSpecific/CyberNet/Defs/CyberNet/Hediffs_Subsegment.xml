@@ -48,7 +48,7 @@
 
 	<HediffDef ParentName="CNHediffProsthetic_Subsegment">
 		<defName>CNNetworkedInternalSupport</defName>
-		<label>bionic internal support</label>
+		<label>networked internal support</label>
 		<labelNoun>a networked internal support</labelNoun>
 		<description>An installed networked internal support.</description>
 		<descriptionHyperlinks>
@@ -126,6 +126,11 @@
 		<labelNoun>a networked forearm part</labelNoun>
 		<description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic forearms, and more efficient, but requires infrastructure to function.</description>
 		<spawnThingOnRemoved>CNNetworkedForearmPart</spawnThingOnRemoved>
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>1</maxModules>
+			</li>
+		</comps>
 	</HediffDef>
 
 	<ThingDef ParentName="CyberNetProsthetic_Subsegment">
@@ -191,7 +196,11 @@
 		<description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic hands, and more efficient, but requires infrastructure to function.</description>
 		<spawnThingOnRemoved>CNNetworkedHandPart</spawnThingOnRemoved>
 		<!-- comp verb taken from arm -->
-		<comps />
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>1</maxModules>
+			</li>
+		</comps>
 	</HediffDef>
 
 	<ThingDef ParentName="CyberNetProsthetic_Subsegment">

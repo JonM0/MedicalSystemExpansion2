@@ -39,4 +39,30 @@
 		<xpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNAdvancedNetworkedArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
 	</Operation>
 
+
+	<!-- add module slots -->
+
+
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNAdvancedNetworkedArm" or defName="CNNetworkedArm"]</xpath>
+		<value>
+			<comps>
+				<li Class="MSE2.HediffCompProperties_ModuleHolder">
+					<maxModules>1</maxModules>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNAdvancedNetworkedLeg" or defName="CNNetworkedLeg"]</xpath>
+		<value>
+			<comps>
+				<li Class="MSE2.HediffCompProperties_ModuleHolder">
+					<maxModules>2</maxModules>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+
 </Patch>

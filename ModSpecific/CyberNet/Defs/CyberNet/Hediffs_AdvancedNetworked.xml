@@ -41,6 +41,9 @@
 		<description>An installed advanced networked hand.</description>
 		<spawnThingOnRemoved>CNAdvancedNetworkedHand</spawnThingOnRemoved>
 		<comps>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>2</maxModules>
+			</li>
 			<li Class="CyberNet.HediffCompPropertiesCyberNetImplant">
 				<compClass>CyberNet.HediffCompCyberNetImplant</compClass>
 				<DefaultSeverity>1</DefaultSeverity>
