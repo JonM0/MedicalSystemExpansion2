@@ -14,14 +14,5 @@
 		<xpath>/Defs/ThingDef[@Name="BodyPartProsthetic_Limb" or @Name="BodyPartProsthetic_Bone"]</xpath>
 		<fromxpath>/Defs/ThingDef[@Name="Simple"]/*[name()!="statBases" and name()!="thingCategories"]</fromxpath>
 	</Operation>
-	
-  <Operation Class="PatchOperationAddModExtension">
-    <xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="HookHand"]</xpath>
-    <value>
-      <li Class="MSE2.IgnoreSubParts">
-				<ignoreAll>true</ignoreAll>
-      </li>
-    </value>
-  </Operation>
 
 </Patch>
