@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- remove power arms -->
+	<Operation Class="PatchOperationRemove">
+		<xpath> /Defs/HediffDef[@ParentName="AddedBodyPartBase"] [defName="CONN_hediff_PowerArms"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath> /Defs/ThingDef[@ParentName="CombatAdvancedBionicsBase"] [defName="CONN_PowerArms"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath> /Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"] [defName="CONN_InstallPowerArms"]</xpath>
+	</Operation>
+
+</Patch>
