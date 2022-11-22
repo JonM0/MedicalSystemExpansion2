@@ -46,7 +46,7 @@
 			<li>
 				<statOffsets>
 					<PsychicSensitivity>0.01</PsychicSensitivity>
-					<ToxicResistance>0.99</ToxicResistance>
+					<ToxicSensitivity>0.01</ToxicSensitivity>
 				</statOffsets>
 			</li>
 		</stages>
@@ -136,7 +136,7 @@
 				</capMods>
 				<statOffsets>
 					<PsychicSensitivity>0.02</PsychicSensitivity>
-					<ToxicResistance>0.98</ToxicResistance>
+					<ToxicSensitivity>0.02</ToxicSensitivity>
 				</statOffsets>
 			</li>
 		</stages>
@@ -221,7 +221,7 @@
 				</capMods>
 				<statOffsets>
 					<PsychicSensitivity>0.005</PsychicSensitivity>
-					<ToxicResistance>0.995</ToxicResistance>
+					<ToxicSensitivity>0.005</ToxicSensitivity>
 				</statOffsets>
 			</li>
 		</stages>
@@ -299,7 +299,7 @@
 				</capMods>
 				<statOffsets>
 					<PsychicSensitivity>0.02</PsychicSensitivity>
-					<ToxicResistance>0.98</ToxicResistance>
+					<ToxicSensitivity>0.02</ToxicSensitivity>
 				</statOffsets>
 			</li>
 		</stages>
@@ -386,7 +386,7 @@
 				</capMods>
 				<statOffsets>
 					<PsychicSensitivity>0.005</PsychicSensitivity>
-					<ToxicResistance>0.995</ToxicResistance>
+					<ToxicSensitivity>0.005</ToxicSensitivity>
 				</statOffsets>
 			</li>
 		</stages>

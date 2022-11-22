@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- mutant leg -->
+
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/ThingDef[@ParentName="AA_BodyPartMutantBase"][defName="AA_MutantLeg"]</xpath>
+		<value>
+			<comps>
+				<li Class="MSE2.CompProperties_IncludedChildParts">
+					<standardChildren>
+						<li>AA_MutantFoot</li>
+						<li>AA_MutantBone</li>
+					</standardChildren>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="AA_BodyPartMutantBase"][defName="AA_MutantLeg"]/statBases</xpath>
+		<value>
+			<statBases>
+				<MarketValue>51</MarketValue>
+				<Mass>2</Mass>
+			</statBases>
+		</value>
+	</Operation>
+
+	<!-- mutant arm -->
+
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/ThingDef[@ParentName="AA_BodyPartMutantBase"][defName="AA_MutantArm"]</xpath>
+		<value>
+			<comps>
+				<li Class="MSE2.CompProperties_IncludedChildParts">
+					<standardChildren>
+						<li>AA_MutantHand</li>
+						<li>AA_MutantBone</li>
+					</standardChildren>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="AA_BodyPartMutantBase"][defName="AA_MutantArm"]/statBases</xpath>
+		<value>
+			<statBases>
+				<MarketValue>51</MarketValue>
+				<Mass>2</Mass>
+			</statBases>
+		</value>
+	</Operation>
+
+	<!-- move verb from arm to hand -->
+
+	<Operation Class="PatchOperationAddCopy">
+		<xpath>/Defs/HediffDef[@ParentName="AA_MutantAddedBodyPartBase"][defName="AA_MutantHand"]/comps</xpath>
+		<fromxpath>/Defs/HediffDef[@ParentName="AA_MutantAddedBodyPartBase"][defName="AA_MutantArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/HediffDef[@ParentName="AA_MutantAddedBodyPartBase"][defName="AA_MutantArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+	</Operation>
+
+
+</Patch>
