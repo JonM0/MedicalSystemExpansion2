@@ -27,6 +27,16 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName="AA_MutantLeg"]/stages/li/statOffsets</xpath>
+		<value>
+			<statOffsets>
+				<PsychicSensitivity>0.07</PsychicSensitivity>
+				<ToxicResistance>-0.07</ToxicResistance>
+			</statOffsets>
+		</value>
+	</Operation>
+
 	<!-- mutant arm -->
 
 	<Operation Class="PatchOperationAddOrMerge">
@@ -50,6 +60,16 @@
 				<MarketValue>51</MarketValue>
 				<Mass>2</Mass>
 			</statBases>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName="AA_MutantArm"]/stages/li/statOffsets</xpath>
+		<value>
+			<statOffsets>
+				<PsychicSensitivity>0.07</PsychicSensitivity>
+				<ToxicResistance>-0.07</ToxicResistance>
+			</statOffsets>
 		</value>
 	</Operation>
 

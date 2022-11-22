@@ -106,7 +106,6 @@
 		<addsHediff>AA_MutantBone</addsHediff>
 		<modExtensions>
 			<li Class="MSE2.InstallationRestrictions">
-				<onlyOnNatural>true</onlyOnNatural>
 				<whitelist>
 					<li>AA_MutantLeg</li>
 					<li>AA_MutantArm</li>

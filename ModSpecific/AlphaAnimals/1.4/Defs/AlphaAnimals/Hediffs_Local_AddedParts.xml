@@ -46,7 +46,7 @@
 			<li>
 				<statOffsets>
 					<PsychicSensitivity>0.01</PsychicSensitivity>
-					<ToxicResistance>0.99</ToxicResistance>
+					<ToxicResistance>-0.01</ToxicResistance>
 				</statOffsets>
 			</li>
 		</stages>
@@ -106,7 +106,6 @@
 		<addsHediff>AA_MutantBone</addsHediff>
 		<modExtensions>
 			<li Class="MSE2.InstallationRestrictions">
-				<onlyOnNatural>true</onlyOnNatural>
 				<whitelist>
 					<li>AA_MutantLeg</li>
 					<li>AA_MutantArm</li>
@@ -135,8 +134,8 @@
 					</li>
 				</capMods>
 				<statOffsets>
-					<PsychicSensitivity>0.02</PsychicSensitivity>
-					<ToxicResistance>0.98</ToxicResistance>
+					<PsychicSensitivity>0.025</PsychicSensitivity>
+					<ToxicResistance>-0.025</ToxicResistance>
 				</statOffsets>
 			</li>
 		</stages>
@@ -221,7 +220,7 @@
 				</capMods>
 				<statOffsets>
 					<PsychicSensitivity>0.005</PsychicSensitivity>
-					<ToxicResistance>0.995</ToxicResistance>
+					<ToxicResistance>-0.005</ToxicResistance>
 				</statOffsets>
 			</li>
 		</stages>
@@ -298,8 +297,8 @@
 					</li>
 				</capMods>
 				<statOffsets>
-					<PsychicSensitivity>0.02</PsychicSensitivity>
-					<ToxicResistance>0.98</ToxicResistance>
+					<PsychicSensitivity>0.025</PsychicSensitivity>
+					<ToxicResistance>-0.025</ToxicResistance>
 				</statOffsets>
 			</li>
 		</stages>
@@ -386,7 +385,7 @@
 				</capMods>
 				<statOffsets>
 					<PsychicSensitivity>0.005</PsychicSensitivity>
-					<ToxicResistance>0.995</ToxicResistance>
+					<ToxicResistance>-0.005</ToxicResistance>
 				</statOffsets>
 			</li>
 		</stages>
