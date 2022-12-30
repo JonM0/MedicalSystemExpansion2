@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vanilla Archotech -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- To allow these bionics to have bionic internal supports -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[@ParentName="SurgeryInstallBodyPart_Limb_Bionic"][defName="InstallBionicInternalSupport"]/modExtensions/li[@Class="MSE2.InstallationRestrictions"]/whitelist</xpath>
+					<value>
+						<li>FSFBionicDrillArm</li>
+						<li>BionicDrillForearm</li>
+						<li>FSFBionicFieldArm</li>
+						<li>BionicFieldForearm</li>
+					</value>
+				</li>
+
+				<!-- FSF Royalty Bionic Drill Arm -->
+
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>Defs/ThingDef[defName="FSFBionicDrillArm"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>BionicDrillForearm</li>
+									<li>BionicManipulator</li>
+									<li>BionicInternalSupport</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="FSFBionicDrillArm"]/costList</xpath>
+					<value>
+						<costList>
+							<Steel>22</Steel>
+							<Plasteel>10</Plasteel>
+							<ComponentIndustrial>2</ComponentIndustrial>
+							<ComponentSpacer>3</ComponentSpacer>
+						</costList>
+					</value>
+				</li>
+
+				<!-- FSF Royalty Bionic Field Arm -->
+
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>Defs/ThingDef[defName="FSFBionicFieldArm"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>BionicFieldForearm</li>
+									<li>BionicFieldHand</li>
+									<li>BionicInternalSupport</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="FSFBionicFieldArm"]/costList</xpath>
+					<value>
+						<costList>
+							<Steel>22</Steel>
+							<Plasteel>10</Plasteel>
+							<ComponentIndustrial>2</ComponentIndustrial>
+							<ComponentSpacer>3</ComponentSpacer>
+						</costList>
+					</value>
+				</li>
+
+				<!-- move verb from arm to hand -->
+
+				<li Class="PatchOperationAddCopy">
+					<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicManipulator"]/comps</xpath>
+					<fromxpath>Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="FSFBionicDrillArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="FSFBionicDrillArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+				</li>
+
+				<li Class="PatchOperationAddCopy">
+					<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicFieldHand"]/comps</xpath>
+					<fromxpath>Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="FSFBionicFieldArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="FSFBionicFieldArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+				</li>
+
+			</operations>
+		</match>
+
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/HediffDef[defName="BionicDrillForearm" or defName="BionicManipulator" or defName="BionicManipulatorFinger" or defName="BionicFieldForearm" or defName="BionicFieldHand" or defName="BionicFieldFinger"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="BionicDrillForearm" or defName="BionicManipulator" or defName="BionicManipulatorFinger" or defName="BionicFieldForearm" or defName="BionicFieldHand" or defName="BionicFieldFinger"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName="InstallBionicDrillForearm" or defName="InstallBionicManipulator" or defName="InstallBionicManipulatorFinger" or defName="InstallBionicFieldForearm" or defName="InstallBionicFieldHand" or defName="InstallBionicFieldFinger"]</xpath>
+				</li>
+
+			</operations>
+		</nomatch>
+
+	</Operation>
+</Patch>

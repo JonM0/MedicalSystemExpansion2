@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Bionic Drill forearm -->
+	
+	<HediffDef ParentName="AddedBodyPart_Limb_Bionic">
+		<defName>BionicDrillForearm</defName>
+		<label>bionic drill forearm</label>
+		<labelNoun>a bionic drill forearm</labelNoun>
+		<description>An installed bionic drill forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>FSFBionicDrillArm</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>BionicDrillForearm</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartProstheticImperialBase">
+		<defName>BionicDrillForearm</defName>
+		<label>bionic drill forearm</label>
+		<description>An advanced specialized drill forearm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
+		<descriptionHyperlinks>
+			<ThingDef>FSFBionicDrillArm</ThingDef>
+			<RecipeDef>InstallBionicDrillForearm</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Plasteel>13</Plasteel>
+			<Steel>39</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>SpecializedLimbs</researchPrerequisite>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>BionicManipulator</li>
+					<li>BionicInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallBionicDrillForearm</defName>
+		<label>install bionic drill forearm</label>
+		<description>Install a bionic drill forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicDrillForearm</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing replacement bionic drill forearm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicDrillForearm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicDrillForearm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicDrillForearm</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<whitelist>
+					<li>FSFBionicDrillArm</li>
+				</whitelist>
+			</li>
+			<li Class="MSE2.AutoRecipeUsers">
+				<minIntelligence>Humanlike</minIntelligence>
+				<bodySizeRange>0.7~1.2</bodySizeRange>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<!-- Bionic Manipulator -->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>BionicManipulator</defName>
+		<label>bionic manipulator</label>
+		<labelNoun>a bionic manipulator</labelNoun>
+		<description>An installed bionic manipulator.</description>
+		<descriptionHyperlinks>
+			<ThingDef>FSFBionicDrillArm</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>BionicManipulator</spawnThingOnRemoved>
+		<comps/>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicImperialBase">
+		<defName>BionicManipulator</defName>
+		<label>bionic manipulator</label>
+		<description>A general-purpose bionic manipulator. Can only be installed on a bionic drill arm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>FSFBionicDrillArm</ThingDef>
+			<RecipeDef>InstallBionicManipulator</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>24</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>3800</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>SpecializedLimbs</researchPrerequisite>
+		</recipeMaker>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>BionicManipulatorFinger</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallBionicManipulator</defName>
+		<label>install bionic manipulator</label>
+		<description>Install a bionic manipulator.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicManipulator</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing bionic manipulator.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicManipulator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicManipulator</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicManipulator</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<whitelist>
+					<li>BionicDrillForearm</li>
+				</whitelist>
+			</li>
+			<li Class="MSE2.AutoRecipeUsers">
+				<minIntelligence>Humanlike</minIntelligence>
+				<bodySizeRange>0.7~1.2</bodySizeRange>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<!-- Bionic Manipulator Finger -->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>BionicManipulatorFinger</defName>
+		<label>bionic manipulator finger</label>
+		<labelNoun>a bionic manipulator finger</labelNoun>
+		<description>An installed bionic manipulator finger.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicManipulatorFinger</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.20</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>BionicManipulatorFinger</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicImperialBase">
+		<defName>BionicManipulatorFinger</defName>
+		<label>bionic manipulator finger</label>
+		<description>A general purpose bionic manipulator finger. Can only be installed on a bionic manipulator.</description>
+		<descriptionHyperlinks>
+			<ThingDef>FSFBionicDrillArm</ThingDef>
+			<RecipeDef>InstallBionicManipulatorFinger</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>15</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<productCount>5</productCount>
+			<researchPrerequisite>SpecializedLimbs</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallBionicManipulatorFinger</defName>
+		<label>install bionic manipulator finger</label>
+		<description>Install a bionic manipulator finger.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicManipulatorFinger</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing bionic manipulator finger.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicManipulatorFinger</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicManipulatorFinger</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Finger</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicManipulatorFinger</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<whitelist>
+					<li>BionicManipulator</li>
+				</whitelist>
+			</li>
+			<li Class="MSE2.AutoRecipeUsers">
+				<minIntelligence>Humanlike</minIntelligence>
+				<bodySizeRange>0.7~1.2</bodySizeRange>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+	
+	<!-- Bionic Field forearm -->
+	
+	<HediffDef ParentName="AddedBodyPart_Limb_Bionic">
+		<defName>BionicFieldForearm</defName>
+		<label>bionic field forearm</label>
+		<labelNoun>a bionic field forearm</labelNoun>
+		<description>An installed bionic field forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>FSFBionicFieldArm</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>BionicFieldForearm</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartProstheticImperialBase">
+		<defName>BionicFieldForearm</defName>
+		<label>bionic field forearm</label>
+		<description>An advanced specialized field forearm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
+		<descriptionHyperlinks>
+			<ThingDef>FSFBionicFieldArm</ThingDef>
+			<RecipeDef>InstallBionicFieldForearm</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Steel>7</Steel>
+			<Plasteel>13</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>SpecializedLimbs</researchPrerequisite>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>BionicFieldHand</li>
+					<li>BionicInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallBionicFieldForearm</defName>
+		<label>install bionic field forearm</label>
+		<description>Install a bionic field forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>FSFBionicFieldArm</ThingDef>
+			<ThingDef>BionicFieldForearm</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing replacement bionic field forearm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicFieldForearm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicFieldForearm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicFieldForearm</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<whitelist>
+					<li>FSFBionicFieldArm</li>
+				</whitelist>
+			</li>
+			<li Class="MSE2.AutoRecipeUsers">
+				<minIntelligence>Humanlike</minIntelligence>
+				<bodySizeRange>0.7~1.2</bodySizeRange>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<!-- Bionic field hand -->
+	
+	<HediffDef ParentName="AddedBodyPartBase">
+      <defName>BionicFieldHand</defName>
+      <label>bionic field hand</label>
+      <labelNoun>a bionic field hand</labelNoun>
+      <description>An installed bionic field hand.</description>
+      <descriptionHyperlinks><ThingDef>BionicFieldHand</ThingDef></descriptionHyperlinks>
+      <addedPartProps>
+        <solid>true</solid>
+		<partEfficiency>1.25</partEfficiency>
+      </addedPartProps>
+      <spawnThingOnRemoved>BionicFieldHand</spawnThingOnRemoved>
+	  <comps/>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicImperialBase">
+		<defName>BionicFieldHand</defName>
+		<label>Bionic field hand</label>
+		<description>This Bionic hand replacement is made to speed up the sowing and harvesting tasks of a farmer. Multiple telescoping finger-like protrusions can simultaneously harvest from several points on the same plant, or precisely sow several holes at once. It also has a general-purpose Bionic manipulator.</description>
+		<descriptionHyperlinks>
+			<ThingDef>FSFBionicFieldArm</ThingDef>
+			<RecipeDef>InstallBionicFieldHand</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Steel>24</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>SpecializedLimbs</researchPrerequisite>
+		</recipeMaker>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>BionicFieldFinger</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallBionicFieldHand</defName>
+		<label>install bionic field hand</label>
+		<description>Install a bionic field hand.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicFieldHand</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing bionic field hand.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicFieldHand</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicFieldHand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicFieldHand</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<whitelist>
+					<li>BionicFieldForearm</li>
+				</whitelist>
+			</li>
+			<li Class="MSE2.AutoRecipeUsers">
+				<minIntelligence>Humanlike</minIntelligence>
+				<bodySizeRange>0.7~1.2</bodySizeRange>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<!-- Field Fingers -->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>BionicFieldFinger</defName>
+		<label>bionic field finger</label>
+		<labelNoun>a bionic field finger</labelNoun>
+		<description>An installed field finger.</description>
+		<descriptionHyperlinks>
+			<ThingDef>FSFBionicFieldArm</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<partEfficiency>1.20</partEfficiency>
+			<solid>true</solid>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<PlantWorkSpeed>0.15</PlantWorkSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>BionicFieldFinger</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicImperialBase">
+		<defName>BionicFieldFinger</defName>
+		<label>Bionic field finger</label>
+		<description>This Bionic finger replacement is made to speed up the sowing and harvesting tasks of a farmer, it can harvest from several points on the same plant, or precisely sow several holes at once. Can only be installed on a bionic field hand.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicFieldHand</ThingDef>
+			<RecipeDef>InstallBionicFieldFinger</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>18</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<productCount>5</productCount>
+			<researchPrerequisite>SpecializedLimbs</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallBionicFieldFinger</defName>
+		<label>install bionic field finger</label>
+		<description>Install a field finger.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicFieldFinger</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing field finger.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicFieldFinger</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicFieldFinger</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Finger</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicFieldFinger</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<whitelist>
+					<li>BionicFieldHand</li>
+				</whitelist>
+			</li>
+			<li Class="MSE2.AutoRecipeUsers">
+				<minIntelligence>Humanlike</minIntelligence>
+				<bodySizeRange>0.7~1.2</bodySizeRange>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+</Defs>

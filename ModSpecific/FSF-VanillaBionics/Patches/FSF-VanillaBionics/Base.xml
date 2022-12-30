@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Removal of Bionic Power Arm as it is already a module -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="FSFBionicPowerArm"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="FSFBionicPowerArm"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallFSFBionicPowerArm"]</xpath>
+	</Operation>
+
+	<!-- Removal of duplicate prosthetic hand and foot -->	
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/HediffDef[defName="FSFProstheticHand" or defName="FSFProstheticFoot"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="FSFProstheticHand" or defName="FSFProstheticFoot"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/RecipeDef[defName="InstallFSFProstheticHand" or defName="InstallFSFProstheticFoot"]</xpath>
+	</Operation>
+		
+</Patch>
