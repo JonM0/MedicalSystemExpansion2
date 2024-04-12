@@ -96,4 +96,37 @@
 		<li>Common</li>
 		<li>1.4</li>
 	</v1.4>
+	
+	<v1.5>	
+		<!-- other mods -->
+		<li IfModActive="spoonshortage.ADogSaidAnimalProsthetics">ModSpecific/ADS</li>
+		<li IfModActive="kikohi.cybernetic">ModSpecific/CONN_1_4</li>
+		<li IfModActive="sarg.alphaanimals">ModSpecific/AlphaAnimals/1.4</li>
+		<li IfModActive="vat.epoeforkedroyalty">ModSpecific/EPOE-F_Royalty</li>
+		<li IfModActive="K.CyberNet">ModSpecific/CyberNet</li>
+		<li IfModActive="V1024.EBFramework">ModSpecific/EBF</li>
+		<li IfModActive="automatic.bionicicons">ModSpecific/BionicIcons</li>
+		<li IfModActive="Teok25.ArchotechExpanded.Prosthetics">ModSpecific/ArchotechExpandedProsthetics</li>
+		<li IfModActive="Ogliss.Mythos.ExtendedHumanBodySimulation">ModSpecific/ExtendedHumanBodySimulation</li>
+		<li IfModActive="frozensnowfox.vanillabionicsexpansion">ModSpecific/FSF-VanillaBionics</li>
+		
+		<!-- race mods -->
+		<li IfModActive="ChaosKnight.KilhnRace">AlienRaces/KilhnRace</li>
+		<li IfModActive="Mlie.CallofCthulhuElderThings">AlienRaces/ElderThings_Race</li>
+		<li IfModActive="dianawinters.Orassans">AlienRaces/Orassans</li>
+		<li IfModActive="Hauvega.EquiumsSeries.Equiums">AlienRaces/Equiums</li>
+
+		<!-- main prosthetics -->
+		<!-- <li IfModNotActive="vat.epoeforked, Ykara.EPOE, Rah.RBSE">ModSpecific/None</li> -->
+		<li IfModActive="Ykara.EPOE">ModSpecific/EPOE</li>
+		<li IfModActive="vat.epoeforked">ModSpecific/EPOE-F</li>
+		<li IfModActive="Rah.RBSE">ModSpecific/RBSE</li>
+
+		<!-- royalty -->
+		<li IfModActive="Ludeon.Rimworld.Royalty">ModSpecific/Royalty</li>
+
+		<!-- base -->
+		<li>Common</li>
+		<li>1.5</li>
+	</v1.5>
 </loadFolders>
