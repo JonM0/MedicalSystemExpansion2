@@ -122,8 +122,9 @@
 		<li IfModActive="vat.epoeforked">ModSpecific/EPOE-F</li>
 		<li IfModActive="Rah.RBSE">ModSpecific/RBSE</li>
 
-		<!-- royalty -->
+		<!-- dlcs -->
 		<li IfModActive="Ludeon.Rimworld.Royalty">ModSpecific/Royalty</li>
+		<li IfModActive="Ludeon.RimWorld.Anomaly">ModSpecific/Anomaly</li>
 
 		<!-- base -->
 		<li>Common</li>

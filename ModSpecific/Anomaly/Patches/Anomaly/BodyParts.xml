@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Ignore subparts of tentacle and fleshwhip -->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/HediffDef[@ParentName="AddedMutationBase"][defName="Tentacle" or defName="FleshWhip"]</xpath>
+		<!-- <xpath>Defs/HediffDef[@ParentName="AddedMutationBase"][defaultInstallPart="Shoulder"]</xpath> -->
+		<value>
+			<li Class="MSE2.IgnoreSubParts">
+				<ignoredSubParts>
+					<li>Arm</li>
+					<li>Hand</li>
+					<li>Finger</li>
+					<li>Clavicle</li>
+					<li>Humerus</li>
+					<li>Radius</li>
+				</ignoredSubParts>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>
