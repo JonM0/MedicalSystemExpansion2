@@ -3,7 +3,7 @@
 	<v1.2>	
 		<!-- other mods -->
 		<li IfModActive="spoonshortage.ADogSaidAnimalProsthetics">ModSpecific/ADS</li>
-		<li IfModActive="kikohi.cybernetic">ModSpecific/CONN</li>
+		<li IfModActive="kikohi.cybernetic,doug.conn">ModSpecific/CONN</li>
 		<li IfModActive="sarg.alphaanimals">ModSpecific/AlphaAnimals/old</li>
 		<li IfModActive="vat.epoeforkedroyalty">ModSpecific/EPOE-F_Royalty</li>
 		<li IfModActive="K.CyberNet">ModSpecific/CyberNet</li>
@@ -35,7 +35,7 @@
 	<v1.3>	
 		<!-- other mods -->
 		<li IfModActive="spoonshortage.ADogSaidAnimalProsthetics">ModSpecific/ADS</li>
-		<li IfModActive="kikohi.cybernetic">ModSpecific/CONN</li>
+		<li IfModActive="kikohi.cybernetic,doug.conn">ModSpecific/CONN</li>
 		<li IfModActive="sarg.alphaanimals">ModSpecific/AlphaAnimals/old</li>
 		<li IfModActive="vat.epoeforkedroyalty">ModSpecific/EPOE-F_Royalty</li>
 		<li IfModActive="K.CyberNet">ModSpecific/CyberNet</li>
@@ -67,7 +67,7 @@
 	<v1.4>	
 		<!-- other mods -->
 		<li IfModActive="spoonshortage.ADogSaidAnimalProsthetics">ModSpecific/ADS</li>
-		<li IfModActive="kikohi.cybernetic">ModSpecific/CONN_1_4</li>
+		<li IfModActive="kikohi.cybernetic,doug.conn">ModSpecific/CONN_1_4</li>
 		<li IfModActive="sarg.alphaanimals">ModSpecific/AlphaAnimals/1.4</li>
 		<li IfModActive="vat.epoeforkedroyalty">ModSpecific/EPOE-F_Royalty</li>
 		<li IfModActive="K.CyberNet">ModSpecific/CyberNet</li>
@@ -100,7 +100,7 @@
 	<v1.5>	
 		<!-- other mods -->
 		<li IfModActive="spoonshortage.ADogSaidAnimalProsthetics">ModSpecific/ADS</li>
-		<li IfModActive="kikohi.cybernetic">ModSpecific/CONN_1_4</li>
+		<li IfModActive="kikohi.cybernetic,doug.conn">ModSpecific/CONN_1_4</li>
 		<li IfModActive="sarg.alphaanimals">ModSpecific/AlphaAnimals/1.4</li>
 		<li IfModActive="vat.epoeforkedroyalty">ModSpecific/EPOE-F_Royalty</li>
 		<li IfModActive="K.CyberNet">ModSpecific/CyberNet</li>
