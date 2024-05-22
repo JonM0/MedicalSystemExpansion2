@@ -77,4 +77,72 @@
     </skillRequirements>
   </RecipeDef>
 
+    <!-- greenthumb -->
+  <HediffDef ParentName="MSE_ModuleAddedBionic">
+    <defName>Trunken_hediff_Greenthumb</defName>
+    <label>greenthumb module</label>
+    <description>A dedicated bionic module created for farmers in an effort of quick colonization. It replaces the thumb as a full configurable and functional finger device. Everything inside the palm of the hand is scanned with a learning nanocomputer, containing information about various types of flora and fauna. The nail glows green during data scans and loading times.</description>
+    <labelNoun>a greenthumb module</labelNoun>
+    <defaultLabelColor>(0.4, 0.6, 0.9)</defaultLabelColor>
+    <stages>
+      <li>
+        <statOffsets>
+          <PlantHarvestYield>0.08</PlantHarvestYield>
+          <PlantWorkSpeed>0.08</PlantWorkSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+    <spawnThingOnRemoved>ANN_Greenthumb</spawnThingOnRemoved>
+    <descriptionHyperlinks>
+      <ThingDef>ANN_Greenthumb</ThingDef>
+    </descriptionHyperlinks>
+  </HediffDef>
+
+  <ThingDef ParentName="ProductiveBionicsBase_Module">
+    <defName>ANN_Greenthumb</defName>
+    <label>greenthumb module</label>
+    <description>A dedicated bionic module created for farmers in an effort of quick colonization. It replaces the thumb as a full configurable and functional finger device. Everything inside the palm of the hand is scanned with a learning nanocomputer, containing information about various types of flora and fauna. The nail glows green during data scans and loading times.</description>
+    <costList>
+      <Gold>5</Gold>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <statBases>
+      <Mass>0.1</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+    <defName>ANN_InstallGreenthumb</defName>
+    <label>install greenthumb module</label>
+    <description>Install a greenthumb module.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ANN_Greenthumb</ThingDef>
+      <HediffDef>Trunken_hediff_Greenthumb</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing greenthumb.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ANN_Greenthumb</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ANN_Greenthumb</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hand</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Trunken_hediff_Greenthumb</addsHediff>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+  </RecipeDef>
+
 </Defs>
