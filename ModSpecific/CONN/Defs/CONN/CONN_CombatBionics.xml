@@ -77,4 +77,73 @@
     </skillRequirements>
   </RecipeDef>
 
+  <!-- elastic achilles -->
+  <HediffDef ParentName="MSE_ModuleAddedBionic">
+    <defName>Trunken_hediff_ElasticAchilles</defName>
+    <label>elastic achilles module</label>
+    <description>This bionic leg module can hold a man on his feet, even without any flesh on his bones. It's designed to annul the last human weakness in close combat, the Achilles' heel, by replacing it with a more elastic and less sensitive version. Favored by heavy ground units.</description>
+    <labelNoun>an elastic Achilles' heel module</labelNoun>
+    <defaultLabelColor>(0, 0.8, 0.5)</defaultLabelColor>
+    <stages>
+      <li>
+        <statOffsets>
+          <TrapSpringChance>-0.1</TrapSpringChance>
+          <MeleeHitChance>4</MeleeHitChance>
+        </statOffsets>
+      </li>
+    </stages>
+    <spawnThingOnRemoved>ANN_ElasticAchilles</spawnThingOnRemoved>
+    <descriptionHyperlinks>
+      <ThingDef>ANN_ElasticAchilles</ThingDef>
+    </descriptionHyperlinks>
+  </HediffDef>
+
+  <ThingDef ParentName="CombatBionicsBase_Module">
+    <defName>ANN_ElasticAchilles</defName>
+    <label>elastic achilles module</label>
+    <description>This bionic leg module can hold a man on his feet, even without any flesh on his bones. It's designed to annul the last human weakness in close combat, the Achilles' heel, by replacing it with a more elastic and less sensitive version. Favored by heavy ground units.</description>
+    <costList>
+      <Synthread>75</Synthread>
+      <Hyperweave>50</Hyperweave>
+      <Steel>25</Steel>
+      <Plasteel>15</Plasteel>
+    </costList>
+    <statBases>
+      <Mass>0.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+    <defName>ANN_InstallElasticAchilles</defName>
+    <label>install elastic achilles module</label>
+    <description>Install elastic achilles module.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ANN_ElasticAchilles</ThingDef>
+      <HediffDef>Trunken_hediff_ElasticAchilles</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing elastic achilles.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ANN_ElasticAchilles</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ANN_ElasticAchilles</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Foot</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Trunken_hediff_ElasticAchilles</addsHediff>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+  </RecipeDef>
+
 </Defs>
