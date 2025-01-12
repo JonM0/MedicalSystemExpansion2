@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+
+	<!-- Drill Arm -->
+<!-- 
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName="InstallDrillArm"]/appliedOnFixedBodyParts</xpath>
+		<value>
+			<appliedOnFixedBodyParts>
+				<li>Arm</li>
+			</appliedOnFixedBodyParts>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/RecipeDef[defName="InstallDrillArm"]</xpath>
+    <value>
+			<li Class="MSE2.AutoRecipeUsers">
+				<minIntelligence>Humanlike</minIntelligence>
+				<bodySizeRange>0.7~1.2</bodySizeRange>
+			</li>
+    </value>
+  </Operation> -->
+
+
 	<!-- Field Hand -->
 
 	<Operation Class="PatchOperationReplace">
@@ -8,6 +31,16 @@
 			<PlantWorkSpeed>1.1</PlantWorkSpeed>
 		</value>
 	</Operation>
+	
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/RecipeDef[defName="InstallFieldHand"]</xpath>
+    <value>
+			<li Class="MSE2.AutoRecipeUsers">
+				<minIntelligence>Humanlike</minIntelligence>
+				<bodySizeRange>0.7~1.2</bodySizeRange>
+			</li>
+    </value>
+  </Operation>
 
 
 	<!-- copy melee verbs from basegame -->

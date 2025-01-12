@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- drill -->
-
+<!-- 
 	<ThingDef ParentName="BodyPartProstheticImperialBase">
 		<defName>DrillArm</defName>
 		<label>drill arm</label>
@@ -31,10 +31,10 @@
 				</standardChildren>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef> -->
 
 	<!-- replacement internal support -->
-
+<!-- 
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>MechanicalInternalSupport</defName>
 		<label>mechanical internal support</label>
@@ -109,10 +109,10 @@
 				<bodySizeRange>0.7~1.2</bodySizeRange>
 			</li>
 		</modExtensions>
-	</RecipeDef>
+	</RecipeDef> -->
 
 	<!-- Mechanical Manipulator -->
-
+<!-- 
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>MechanicalManipulator</defName>
 		<label>mechanical manipulator</label>
@@ -193,10 +193,10 @@
 				<bodySizeRange>0.7~1.2</bodySizeRange>
 			</li>
 		</modExtensions>
-	</RecipeDef>
+	</RecipeDef> -->
 
 	<!-- Mechanical Finger -->
-
+<!-- 
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>MechanicalFinger</defName>
 		<label>mechanical finger</label>
@@ -271,7 +271,7 @@
 				<bodySizeRange>0.7~1.2</bodySizeRange>
 			</li>
 		</modExtensions>
-	</RecipeDef>
+	</RecipeDef> -->
 
 	<!-- field hand -->
 
