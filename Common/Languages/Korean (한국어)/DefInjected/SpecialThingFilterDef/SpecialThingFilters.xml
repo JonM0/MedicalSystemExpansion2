@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-	<AllowProsthesesIncomplete.label>allow incomplete</AllowProsthesesIncomplete.label>
-	<AllowProsthesesIncomplete.description>Allow prostheses that are missing some sub-parts for the selected version.</AllowProsthesesIncomplete.description>
+	<AllowProsthesesIncomplete.label>불완전 부위 허용</AllowProsthesesIncomplete.label>
+	<AllowProsthesesIncomplete.description>선택한 버전에서 일부 부속품을 누락한 신체 부위를 허용합니다.</AllowProsthesesIncomplete.description>
 
-	<AllowProsthesesComplete.label>allow complete</AllowProsthesesComplete.label>
-	<AllowProsthesesComplete.description>Allow prostheses that are not missing any sub-part.</AllowProsthesesComplete.description>
+	<AllowProsthesesComplete.label>완전한 부위 허용</AllowProsthesesComplete.label>
+	<AllowProsthesesComplete.description>모든 부속품이 누락되지 않은 신체 부위를 허용합니다.</AllowProsthesesComplete.description>
 
 
 </LanguageData>

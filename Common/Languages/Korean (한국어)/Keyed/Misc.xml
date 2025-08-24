@@ -1,46 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
 	<!-- version labeling -->
-	<LimbComplete>complete</LimbComplete>
-	<LimbSegment>segment</LimbSegment>
-	<LimbSimple>simple</LimbSimple>
-	<LimbVersion>version</LimbVersion>
-	<LimbCompatible>compatible</LimbCompatible>
-	<LimbIncompatible>not compatible</LimbIncompatible>
-	<LimbSelected> (current version)</LimbSelected>
+	<LimbComplete>완전</LimbComplete>
+	<LimbSegment>부위</LimbSegment>
+	<LimbSimple>단순</LimbSimple>
+	<LimbVersion>버전</LimbVersion>
+	<LimbCompatible>호환</LimbCompatible>
+	<LimbIncompatible>미호환</LimbIncompatible>
+	<LimbSelected> (현재 버전)</LimbSelected>
 
-	<!-- Recipe Generation -->
-	<RecipeMakeSegment>make {0} segment</RecipeMakeSegment>
+	<!-- Recipe Generation -->	
+	<RecipeMakeSegment>{0} 부위 제작</RecipeMakeSegment>
 
-	<RecipeMakeUpgrade>assemble {0}</RecipeMakeUpgrade>
+	<RecipeMakeUpgrade>{0} 조립</RecipeMakeUpgrade>
 
-	<RecipeMakeForLimb>make complete {0} ({1})</RecipeMakeForLimb>
-	<RecipeMakeForLimbNoComparison>make complete {0}</RecipeMakeForLimbNoComparison>
-	<RecipeMakeForLimbDescription>Make {0} {1}. It will be installable on the following races: {2}.</RecipeMakeForLimbDescription>
-	<RecipeMakeForLimbJobString>Making {0} ({1}).</RecipeMakeForLimbJobString>
+  <RecipeMakeForLimb>완전한 {0} 제작 ({1})</RecipeMakeForLimb>
+  <RecipeMakeForLimbNoComparison>완전한 {0} 제작</RecipeMakeForLimbNoComparison>
+	<RecipeMakeForLimbDescription>{0} ({1})(을)를 만듭니다. 다음 종족에 설치할 수 있습니다: {2}.</RecipeMakeForLimbDescription>
+	<RecipeMakeForLimbJobString>{0} ({1}) 제작 중</RecipeMakeForLimbJobString>
 
 	<!-- Dialog StatsReports -->
 
-	<StatsReport_ValueOfSubParts>Includes {0}: {1}</StatsReport_ValueOfSubParts>
-	<StatsReport_MassOfSubParts>Contains {0}: {1}</StatsReport_MassOfSubParts>
+	<StatsReport_ValueOfSubParts>{0} 포함: {1}</StatsReport_ValueOfSubParts>
+	<StatsReport_MassOfSubParts>{0} 포함: {1}</StatsReport_MassOfSubParts>
 
 
 	<!-- CompIncludedChildParts -->
-	<CompIncludedChildParts_InspectStringIncludes>Includes {0} direct subparts.</CompIncludedChildParts_InspectStringIncludes>
-	<CompIncludedChildParts_InspectStringTarget>Version: {0}</CompIncludedChildParts_InspectStringTarget>
-	<CompIncludedChildParts_InspectStringMissing> ({0} missing parts)</CompIncludedChildParts_InspectStringMissing>
-	<CompIncludedChildParts_StatIncludedParts_Label>Included subparts</CompIncludedChildParts_StatIncludedParts_Label>
-	<CompIncludedChildParts_StatIncludedParts_Description>When implanted it will also install theese:</CompIncludedChildParts_StatIncludedParts_Description>
-	<CompIncludedChildParts_StatCompatibility_Label>Compatibile versions</CompIncludedChildParts_StatCompatibility_Label>
-	<CompIncludedChildParts_StatCompatibility_Value>{0} of {1}</CompIncludedChildParts_StatCompatibility_Value>
-	<CompIncludedChildParts_StatMissing_Label>Missing parts</CompIncludedChildParts_StatMissing_Label>
-	<CompIncludedChildParts_StatMissing_Description>The following parts are missing:</CompIncludedChildParts_StatMissing_Description>
-	<CompIncludedChildParts_StatMissing_Desc_None>No parts are missing.</CompIncludedChildParts_StatMissing_Desc_None>
+	<CompIncludedChildParts_InspectStringIncludes>{0}개의 직접부속품 포함</CompIncludedChildParts_InspectStringIncludes>
+	<CompIncludedChildParts_InspectStringTarget>버전: {0}</CompIncludedChildParts_InspectStringTarget>
+	<CompIncludedChildParts_InspectStringMissing> ({0}개의 누락된 부속품)</CompIncludedChildParts_InspectStringMissing>
+	<CompIncludedChildParts_StatIncludedParts_Label>포함된 부속품</CompIncludedChildParts_StatIncludedParts_Label>
+	<CompIncludedChildParts_StatIncludedParts_Description>설치하면 아래 항목이 함께 적용됩니다.</CompIncludedChildParts_StatIncludedParts_Description>
+	<CompIncludedChildParts_StatCompatibility_Label>호환 버전</CompIncludedChildParts_StatCompatibility_Label>
+	<CompIncludedChildParts_StatCompatibility_Value>{0}/{1}</CompIncludedChildParts_StatCompatibility_Value>
+	<CompIncludedChildParts_StatMissing_Label>누락된 부속품</CompIncludedChildParts_StatMissing_Label>
+	<CompIncludedChildParts_StatMissing_Description>아래 부속품이 누락됐습니다.</CompIncludedChildParts_StatMissing_Description>
+	<CompIncludedChildParts_StatMissing_Desc_None>누락된 부속품이 없습니다.</CompIncludedChildParts_StatMissing_Desc_None>
 
 	<!-- ModuleHolder -->
-	<ModuleHolder_Compatible_Label>Module slots</ModuleHolder_Compatible_Label>
-	<ModuleHolder_Compatible_ReportText>The following modules can be installed in slots belonging to this bionic:</ModuleHolder_Compatible_ReportText>
+	<ModuleHolder_Compatible_Label>모듈 칸</ModuleHolder_Compatible_Label>
+	<ModuleHolder_Compatible_ReportText>다음 모듈을 이 생체 보조 장치의 슬롯에 설치할 수 있습니다:</ModuleHolder_Compatible_ReportText>
+
+
+	<!-- Bills -->
+	<Bill_MedicalLimbAware_AllowIncomplete>불완전한 의수도 설치할 수 있습니다.</Bill_MedicalLimbAware_AllowIncomplete>
+	<Bill_MedicalLimbAware_OnlyComplete>완전한 의수만 설치합니다.</Bill_MedicalLimbAware_OnlyComplete>
 
 
 </LanguageData>

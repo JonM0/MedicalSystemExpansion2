@@ -3,9 +3,9 @@
 
 	<!-- Hand Talon -->
 
-	<HandTalonModule.label>발톱손 모듈</HandTalonModule.label>
-	<HandTalonModule.labelNoun>발톱손 모듈</HandTalonModule.labelNoun>
-	<HandTalonModule.description>설치된 발톱손 모듈입니다.</HandTalonModule.description>
+	<HandTalonModule.label>칼날 손톱 모듈</HandTalonModule.label>
+	<HandTalonModule.labelNoun>칼날 손톱 모듈</HandTalonModule.labelNoun>
+	<HandTalonModule.description>설치된 칼날 손톱 모듈입니다.</HandTalonModule.description>
 
 
 	<!-- Elbow blade -->
@@ -24,9 +24,9 @@
 
 	<!-- Venom talon -->
 
-	<VenomTalonModule.label>독 발톱 모듈</VenomTalonModule.label>
-	<VenomTalonModule.labelNoun>독 발톱 모듈</VenomTalonModule.labelNoun>
-	<VenomTalonModule.description>설치된 독 발톱 모듈입니다.</VenomTalonModule.description>
+	<VenomTalonModule.label>맹독 손톱 모듈</VenomTalonModule.label>
+	<VenomTalonModule.labelNoun>맹독 손톱 모듈</VenomTalonModule.labelNoun>
+	<VenomTalonModule.description>설치된 맹독 손톱 모듈입니다.</VenomTalonModule.description>
 
 
 </LanguageData>

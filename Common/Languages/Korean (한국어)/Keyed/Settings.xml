@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- HediffHideModeSetting -->
+	<HediffHideModeSetting_Title>표준 부속품 숨기기</HediffHideModeSetting_Title>
+	<HediffHideModeSetting_Description>건강 탭에서 표준 부속품을 언제 숨길지 선택합니다.
+ - 항상 숨기기: 표준 부속품을 항상 숨깁니다.
+ - 항상 표시: 표준 부속품은 항상 표시됩니다.
+ - 간략: 다른 헤디프가 없는 경우 표준 부속품을 숨깁니다.
+ - 간략 또는 모듈: 다른 헤디프가 없는 경우, 또는 모듈만 있는 경우 표준 부속품을 숨깁니다.</HediffHideModeSetting_Description>
+	<HediffHideModeSetting_Always>항상 숨기기</HediffHideModeSetting_Always>
+	<HediffHideModeSetting_Never>항상 표시</HediffHideModeSetting_Never>
+	<HediffHideModeSetting_Clean>간략</HediffHideModeSetting_Clean>
+	<HediffHideModeSetting_CleanOrModules>간략 또는 모듈</HediffHideModeSetting_CleanOrModules>
+
+	<!-- RemoveAllFromSegmentSetting -->
+	<RemoveAllFromSegmentSetting_Title>부위 버전에서 모든 부속품 제거</RemoveAllFromSegmentSetting_Title>
+	<RemoveAllFromSegmentSetting_Description>활성화 시, 부속품을 포함한 부위를 "부위" 버전으로 변경 시 모든 부속품을 분리해 별도 물품으로 생성합니다.</RemoveAllFromSegmentSetting_Description>
+
+	<!-- HideModuleSlotsSetting -->
+	<HideModuleSlotsSetting_Title>모듈 칸 숨기기</HideModuleSlotsSetting_Title>
+	<HideModuleSlotsSetting_Description>활성화 시 모듈 칸을 건강 탭에서 숨깁니다.</HideModuleSlotsSetting_Description>
+
+</LanguageData>

@@ -6,27 +6,27 @@
 
 	<InstallArchotechInternalSupport.label>초월공학 내골격 보철물 이식</InstallArchotechInternalSupport.label>
 	<InstallArchotechInternalSupport.description>초월공학 내골격 보철물을 이식합니다.</InstallArchotechInternalSupport.description>
-	<InstallArchotechInternalSupport.jobString>초월공학 내골격 보철물을 이식 중.</InstallArchotechInternalSupport.jobString>
+	<InstallArchotechInternalSupport.jobString>초월공학 내골격 보철물을 이식 중</InstallArchotechInternalSupport.jobString>
 
 	<!-- arm -->
 
 	<InstallArchotechArm.label>초월공학 팔 이식</InstallArchotechArm.label>
 	<InstallArchotechArm.description>초월공학 팔을 이식합니다.</InstallArchotechArm.description>
-	<InstallArchotechArm.jobString>초월공학 팔 이식 중.</InstallArchotechArm.jobString>
+	<InstallArchotechArm.jobString>초월공학 팔 이식 중</InstallArchotechArm.jobString>
 
 
 	<!-- archotech forearm -->
 
-	<InstallArchotechForearm.label>초월공학 의수 이식</InstallArchotechForearm.label>
-	<InstallArchotechForearm.description>초월공학 의수를 이식합니다.</InstallArchotechForearm.description>
-	<InstallArchotechForearm.jobString>초월공학 의수 이식 중.</InstallArchotechForearm.jobString>
+	<InstallArchotechForearm.label>초월공학 아래팔 이식</InstallArchotechForearm.label>
+	<InstallArchotechForearm.description>초월공학 아래팔을 이식합니다.</InstallArchotechForearm.description>
+	<InstallArchotechForearm.jobString>초월공학 아래팔 이식 중</InstallArchotechForearm.jobString>
 
 
 	<!-- hand -->
 
 	<InstallArchotechHand.label>초월공학 손 이식</InstallArchotechHand.label>
 	<InstallArchotechHand.description>초월공학 손을 이식합니다.</InstallArchotechHand.description>
-	<InstallArchotechHand.jobString>초월공학 손 이식 중.</InstallArchotechHand.jobString>
+	<InstallArchotechHand.jobString>초월공학 손 이식 중</InstallArchotechHand.jobString>
 
 
 	<!-- finger -->
@@ -34,26 +34,26 @@
 
 	<InstallArchotechFinger.label>초월공학 손가락 이식</InstallArchotechFinger.label>
 	<InstallArchotechFinger.description>초월공학 손가락을 이식합니다.</InstallArchotechFinger.description>
-	<InstallArchotechFinger.jobString>초월공학 손가락 이식 중.</InstallArchotechFinger.jobString>
+	<InstallArchotechFinger.jobString>초월공학 손가락 이식 중</InstallArchotechFinger.jobString>
 
 	<!-- leg -->
 
 	<InstallArchotechLeg.label>초월공학 다리 이식</InstallArchotechLeg.label>
 	<InstallArchotechLeg.description>초월공학 다리를 이식합니다.</InstallArchotechLeg.description>
-	<InstallArchotechLeg.jobString>초월공학 다리 이식 중.</InstallArchotechLeg.jobString>
+	<InstallArchotechLeg.jobString>초월공학 다리 이식 중</InstallArchotechLeg.jobString>
 
 
 	<!-- foot -->
 
 	<InstallArchotechFoot.label>초월공학 발 이식</InstallArchotechFoot.label>
 	<InstallArchotechFoot.description>초월공학 발을 이식합니다.</InstallArchotechFoot.description>
-	<InstallArchotechFoot.jobString>초월공학 발 이식 중.</InstallArchotechFoot.jobString>
+	<InstallArchotechFoot.jobString>초월공학 발 이식 중</InstallArchotechFoot.jobString>
 
 
 	<!-- toe -->
 	<InstallArchotechToe.label>초월공학 발가락 이식</InstallArchotechToe.label>
 	<InstallArchotechToe.description>초월공학 발가락을 이식합니다.</InstallArchotechToe.description>
-	<InstallArchotechToe.jobString>초월공학 발가락 이식 중.</InstallArchotechToe.jobString>
+	<InstallArchotechToe.jobString>초월공학 발가락 이식 중</InstallArchotechToe.jobString>
 
 
 </LanguageData>

@@ -3,28 +3,28 @@
 
 	<!-- Hand Talon -->
 
-	<InstallHandTalonModule.label>발톱손 모듈 설치</InstallHandTalonModule.label>
-	<InstallHandTalonModule.description>발톱손 모듈을 설치합니다.</InstallHandTalonModule.description>
-	<InstallHandTalonModule.jobString>발톱손 모듈 설치 중.</InstallHandTalonModule.jobString>
+	<InstallHandTalonModule.label>칼날 손톱 모듈 설치</InstallHandTalonModule.label>
+	<InstallHandTalonModule.description>칼날 손톱 모듈을 설치합니다.</InstallHandTalonModule.description>
+	<InstallHandTalonModule.jobString>칼날 손톱 모듈 설치 중</InstallHandTalonModule.jobString>
 
 	<!-- Elbow blade -->
 
 	<InstallElbowBladeModule.label>팔꿈치 칼날 모듈 설치</InstallElbowBladeModule.label>
 	<InstallElbowBladeModule.description>팔꿈치 칼날 모듈을 설치합니다.</InstallElbowBladeModule.description>
-	<InstallElbowBladeModule.jobString>팔꿈치 칼날 모듈 설치 중.</InstallElbowBladeModule.jobString>
+	<InstallElbowBladeModule.jobString>팔꿈치 칼날 모듈 설치 중</InstallElbowBladeModule.jobString>
 
 
 	<!-- Knee spike -->
 
 	<InstallKneeSpikeModule.label>무릎 송곳 모듈 설치</InstallKneeSpikeModule.label>
 	<InstallKneeSpikeModule.description>무릎 송곳 모듈을 설치합니다.</InstallKneeSpikeModule.description>
-	<InstallKneeSpikeModule.jobString>무릎 송곳 모듈 설치 중.</InstallKneeSpikeModule.jobString>
+	<InstallKneeSpikeModule.jobString>무릎 송곳 모듈 설치 중</InstallKneeSpikeModule.jobString>
 
 	<!-- Venom talon -->
 
-	<InstallVenomTalonModule.label>독 발톱 모듈 설치</InstallVenomTalonModule.label>
-	<InstallVenomTalonModule.description>독 발톱 모듈을 설치합니다.</InstallVenomTalonModule.description>
-	<InstallVenomTalonModule.jobString>독 발톱 모듈 설치 중.</InstallVenomTalonModule.jobString>
+	<InstallVenomTalonModule.label>맹독 손톱 모듈 설치</InstallVenomTalonModule.label>
+	<InstallVenomTalonModule.description>맹독 손톱 모듈을 설치합니다.</InstallVenomTalonModule.description>
+	<InstallVenomTalonModule.jobString>맹독 손톱 모듈 설치 중</InstallVenomTalonModule.jobString>
 
 
 </LanguageData>

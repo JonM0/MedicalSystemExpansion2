@@ -4,31 +4,31 @@
 	<!-- armor module -->
 
 	<ModuleArmorEBF.label>장갑 모듈</ModuleArmorEBF.label>
-	<ModuleArmorEBF.description>Extra plating to toughen up a bionic prosthesis. Makes the part harder to destroy, with the side effect of making it heavier, slightly reducing its efficiency. It will increase the health of the part it is installed on and of any connected bionics.</ModuleArmorEBF.description>
+	<ModuleArmorEBF.description>신체 부위를 보호하는 추가 장갑판입니다. 부위가 더 튼튼해지지만, 무게가 증가하여 효율이 약간 감소합니다. 설치된 부위 및 연결된 부속품 모두의 체력이 증가합니다.</ModuleArmorEBF.description>
 
 
 	<!-- Ranged platform module -->
 
-	<RangedPlatformModule.label>원거리 플랫폼 모듈e</RangedPlatformModule.label>
-	<RangedPlatformModule.description>팔의 모듈 슬롯에 장착하는 전투 보조 장치. 조준 안정기와 표적 시스템으로 원거리 전투 능력을 크게 향상시킵니다.</RangedPlatformModule.description>
+	<RangedPlatformModule.label>원거리 플랫폼 모듈</RangedPlatformModule.label>
+	<RangedPlatformModule.description>팔의 모듈 칸에 장착하는 전투 보조 장치입니다. 조준 안정기와 표적 시스템으로 원거리 전투 능력을 크게 향상시킵니다.</RangedPlatformModule.description>
 
 
 	<!-- melee platform module -->
 
 	<MeleePlatformModule.label>근접 플랫폼 모듈</MeleePlatformModule.label>
-	<MeleePlatformModule.description>팔의 모듈 슬롯에 장착하는 전투 보조 장치. 고감도 모터와 표적 시스템으로 근접 전투 능력을 크게 향상시킵니다.</MeleePlatformModule.description>
+	<MeleePlatformModule.description>팔의 모듈 칸에 장착하는 전투 보조 장치입니다. 감각 모터와 표적 시스템으로 근접 전투 능력을 크게 향상시킵니다.</MeleePlatformModule.description>
 
 
 	<!-- power claw -->
 
 	<PowerClaw.label>강화 발톱 모듈</PowerClaw.label>
-	<PowerClaw.description>A combat-oriented hand module that adds hooked claws on each of its fingers. It cuts deep, and it improves strength enough to crush a skull like a hand crushes an egg. The claws can be retracted, to not impede non-combat tasks, however its overall ungainlyness slows down movement slightly.</PowerClaw.description>
+	<PowerClaw.description>손에 장착하면 각각의 손가락에 예리한 날을 추가하는 전투 모듈입니다. 포악하고 강력한 자동 제어장치 때문에 머리를 달걀 깨뜨리듯이 부술 수 있습니다. 날을 숨길 수 있어서 비전투 시에는 보통 손처럼 사용할 수 있지만, 거추장스러워서 이동속도가 약간 느려집니다.</PowerClaw.description>
 
 
 	<!-- eff mod -->
 
 	<ModuleEfficiency.label>고급 연산 모듈</ModuleEfficiency.label>
-	<ModuleEfficiency.description>Extra processing power to optimize and boost the performance of a bionic prosthesis. It will improve the efficiency of the part it is installed on and of any connected bionics.</ModuleEfficiency.description>
+	<ModuleEfficiency.description>신체 부위의 성능을 최적화하고 개선하기 위한 추가 처리장치입니다. 설치된 부위 및 연결된 부속품 모두의 효율성이 향상됩니다.</ModuleEfficiency.description>
 
 
 </LanguageData>

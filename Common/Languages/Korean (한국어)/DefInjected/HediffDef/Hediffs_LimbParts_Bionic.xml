@@ -10,15 +10,15 @@
 
 	<!-- bionic arm -->
 
-	<BionicArm.label>생체공학 어깨</BionicArm.label>
-	<BionicArm.labelNoun>생체공학 어깨</BionicArm.labelNoun>
-	<BionicArm.description>이식된 생체공학 어깨입니다.</BionicArm.description>
+	<BionicArm.label>생체공학 팔</BionicArm.label>
+	<BionicArm.labelNoun>생체공학 팔</BionicArm.labelNoun>
+	<BionicArm.description>이식된 생체공학 팔입니다.</BionicArm.description>
 
 
 	<!-- bionic forearm -->
-	<BionicForearm.label>생체공학 팔</BionicForearm.label>
-	<BionicForearm.labelNoun>생체공학 팔</BionicForearm.labelNoun>
-	<BionicForearm.description>이식된 생체공학 팔입니다.</BionicForearm.description>
+	<BionicForearm.label>생체공학 아래팔</BionicForearm.label>
+	<BionicForearm.labelNoun>생체공학 아래팔</BionicForearm.labelNoun>
+	<BionicForearm.description>이식된 생체공학 아래팔입니다.</BionicForearm.description>
 
 
 	<!-- hand -->
@@ -31,7 +31,7 @@
 	<!-- finger -->
 
 
-	<BionicFinger.label>생체공학 손가락r</BionicFinger.label>
+	<BionicFinger.label>생체공학 손가락</BionicFinger.label>
 	<BionicFinger.labelNoun>생체공학 손가락</BionicFinger.labelNoun>
 	<BionicFinger.description>이식된 생체공학 손가락입니다.</BionicFinger.description>
 

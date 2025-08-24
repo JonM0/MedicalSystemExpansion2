@@ -1,21 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 	<!-- Gameplay Commands -->
 
 	<!-- Command_AddExistingSubpart -->
-	<CommandAddExistingSubpart_Label>Add sub-part</CommandAddExistingSubpart_Label>
-	<CommandAddExistingSubpart_Description>Choose a part to add to this one's sub-parts.</CommandAddExistingSubpart_Description>
-	<CommandAddExistingSubpart_AddTo>{0} (to {1})</CommandAddExistingSubpart_AddTo>
-	<CommandAddExistingSubpart_CouldNotFindPart>Could not find a compatible part to add.</CommandAddExistingSubpart_CouldNotFindPart>
+	<CommandAddExistingSubpart_Label>부속품 추가</CommandAddExistingSubpart_Label>
+	<CommandAddExistingSubpart_Description>추가할 부속품을 선택합니다.</CommandAddExistingSubpart_Description>
+	<CommandAddExistingSubpart_AddTo>{0} ({1}에)</CommandAddExistingSubpart_AddTo>
+	<CommandAddExistingSubpart_CouldNotFindPart>호환되는 부속품을 찾을 수 없습니다.</CommandAddExistingSubpart_CouldNotFindPart>
 
 	<!-- Command_SetTargetLimb -->
-	<Command_SetTargetLimb_Label>Select version</Command_SetTargetLimb_Label>
-	<Command_SetTargetLimb_Description>Choose what limb this will replace</Command_SetTargetLimb_Description>
-	<Command_SetTargetLimb_NoTarget>Segment</Command_SetTargetLimb_NoTarget>
+	<Command_SetTargetLimb_Label>버전 선택</Command_SetTargetLimb_Label>
+	<Command_SetTargetLimb_Description>기존 신체를 어떻게 대체할지 선택합니다.</Command_SetTargetLimb_Description>
+	<Command_SetTargetLimb_NoTarget>부위</Command_SetTargetLimb_NoTarget>
 
 	<!-- Command_SplitOffSubpart -->
-	<CommandSplitOffSubpart_Label>Remove sub-part</CommandSplitOffSubpart_Label>
-	<CommandSplitOffSubpart_Description>Choose a part to remove from this one's subparts.</CommandSplitOffSubpart_Description>
-	<CommandSplitOffSubpart_RemoveFrom>{0} (from {1})</CommandSplitOffSubpart_RemoveFrom>
+	<CommandSplitOffSubpart_Label>부속품 제거</CommandSplitOffSubpart_Label>
+	<CommandSplitOffSubpart_Description>제거할 부속품을 선택합니다.</CommandSplitOffSubpart_Description>
+	<CommandSplitOffSubpart_RemoveFrom>{0} ({1}에서)</CommandSplitOffSubpart_RemoveFrom>
 
 </LanguageData>

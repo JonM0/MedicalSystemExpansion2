@@ -10,17 +10,17 @@
 
 	<!-- arm -->
 
-	<ArchotechArm.label>초월공학 어깨</ArchotechArm.label>
-	<ArchotechArm.labelNoun>초월공학 어깨</ArchotechArm.labelNoun>
-	<ArchotechArm.description>이식된 초월공학 어깨입니다.</ArchotechArm.description>
+	<ArchotechArm.label>초월공학 팔</ArchotechArm.label>
+	<ArchotechArm.labelNoun>초월공학 팔</ArchotechArm.labelNoun>
+	<ArchotechArm.description>이식된 초월공학 팔입니다.</ArchotechArm.description>
 
 
 	<!-- archotech forearm -->
 
 
-	<ArchotechForearm.label>초월공학 팔</ArchotechForearm.label>
-	<ArchotechForearm.labelNoun>초월공학 팔</ArchotechForearm.labelNoun>
-	<ArchotechForearm.description>이식된 초월공학 팔입니다.</ArchotechForearm.description>
+	<ArchotechForearm.label>초월공학 아래팔</ArchotechForearm.label>
+	<ArchotechForearm.labelNoun>초월공학 아래팔</ArchotechForearm.labelNoun>
+	<ArchotechForearm.description>이식된 초월공학 아래팔입니다.</ArchotechForearm.description>
 
 
 
